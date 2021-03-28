@@ -1,7 +1,8 @@
 const Task = ({task}) => {
     return (
         <div className="task">
-            <h3>{task.text}</h3>
+            <h2>{task.text}</h2>
+            <p>{task.day}</p>
         </div>
     )
 };
