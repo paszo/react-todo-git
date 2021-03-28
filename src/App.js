@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 
 function App() {
 
-    const [tasks, setTasks] = useState(
+    const tasks =
         [
             {
                 id: 1,
@@ -21,9 +20,7 @@ function App() {
                 text: 'Food Shopping',
                 reminder: true
             },
-        ]
-    )
-
+        ];
 
   return (
     <div className="container">
