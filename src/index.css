@@ -19,7 +19,8 @@
 }
 
 .task {
-    background: steelblue;
-    margin: 5px;
+    background: #f4f4f4;
+    margin: 10px 0px;
     padding: 10px;
+    cursor: pointer;
 }

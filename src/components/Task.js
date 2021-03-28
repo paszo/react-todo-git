@@ -1,6 +1,6 @@
 const Task = ({task}) => {
     return (
-        <div>
+        <div className="task">
             <h3>{task.text}</h3>
         </div>
     )
