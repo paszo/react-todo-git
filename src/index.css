@@ -17,3 +17,9 @@
 .header {
     margin-bottom: 20px;
 }
+
+.task {
+    background: steelblue;
+    margin: 5px;
+    padding: 10px;
+}

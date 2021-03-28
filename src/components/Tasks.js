@@ -2,7 +2,7 @@ import Task from './Task';
 
 const Tasks = ({tasks}) => {
     return (
-       <div>
+       <div className="task">
            {tasks.map((task) =>
                <Task key={task.id} task={task}/>
            )}
