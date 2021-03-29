@@ -4,6 +4,8 @@ import Tasks from './components/Tasks';
 
 function App() {
 
+    const [showAddTask, setShowAddTask] = useState(false);
+
     const [tasks, setTasks] = useState(
         [
             {
@@ -38,7 +40,10 @@ function App() {
 
   return (
     <div className="container">
-        <Header/>
+        <Header
+            onAdd={() => setShowAddTask(!showAddTask)}
+            showAdd={showAddTask}
+        />
         <Tasks
             tasks={tasks}
             onToggle={toggleReminder}
