@@ -39,6 +39,13 @@ function App() {
         setTasks(tasks.filter((task) => task.id !== id));
     }
 
+    //Add Task
+    const addTask = (task) => {
+        const id = Math.floor(Math.random() * 10000) + 1;
+        const newTask = {id, ...task};
+        setTasks([...tasks, newTask]);
+    }
+
   return (
     <div className="container">
         <Header
@@ -46,7 +53,7 @@ function App() {
             onAdd={() => setShowAddTask(!showAddTask)}
             showAdd={showAddTask}
         />
-        {showAddTask && <AddTask/>}
+        {showAddTask && <AddTask onAdd={addTask}/>}
         <Tasks
             tasks={tasks}
             onToggle={toggleReminder}
