@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Header from './components/Header';
 import Tasks from './components/Tasks';
+import AddTask from "./components/AddTask";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
             onAdd={() => setShowAddTask(!showAddTask)}
             showAdd={showAddTask}
         />
+        {showAddTask && <AddTask/>}
         <Tasks
             tasks={tasks}
             onToggle={toggleReminder}
