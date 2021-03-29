@@ -50,3 +50,18 @@
     color: red;
 }
 
+.btn {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.btn:focus {
+    outline: none;
+}
