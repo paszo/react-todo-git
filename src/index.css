@@ -12,6 +12,10 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 500px;
     min-width: 300px;
@@ -51,6 +55,8 @@
 }
 
 .btn {
+    background: #000;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -66,3 +72,42 @@
     outline: none;
 }
 
+.btn:active {
+    transform: scale(0.98);
+}
+
+.add-form {
+    margin-bottom: 40px;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+}
+
+.form-control-check {
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control-check label {
+    flex: 1;
+}
+
+.form-control-check input {
+    flex: 2;
+    height: 20px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
